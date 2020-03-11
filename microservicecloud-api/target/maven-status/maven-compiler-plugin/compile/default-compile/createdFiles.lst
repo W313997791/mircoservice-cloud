@@ -1,0 +1,5 @@
+com\example\microservicecloudapi\entity\User.class
+com\example\microservicecloudapi\service\DeptClientService.class
+com\example\microservicecloudapi\service\DeptClientServiceFallbackFactory.class
+com\example\microservicecloudapi\MicroservicecloudApiApplication.class
+com\example\microservicecloudapi\service\DeptClientServiceFallbackFactory$1.class

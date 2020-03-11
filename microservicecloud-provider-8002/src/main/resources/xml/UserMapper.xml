@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.microservicecloudprovider8002.mapper.UserMapper">
+
+    <insert id="add" parameterType="com.example.microservicecloudapi.entity.User">
+        insert into USER
+        values (null,#{name},#{school},#{address})
+    </insert>
+
+    <delete id="delete" parameterType="com.example.microservicecloudapi.entity.User">
+        delete  from user  where ID = #{id}
+    </delete>
+
+    <select id="query" parameterType="com.example.microservicecloudapi.entity.User"
+            resultType="com.example.microservicecloudapi.entity.User">
+        select  * from  USER
+    </select>
+
+    <select id="getUser" resultType="com.example.microservicecloudapi.entity.User">
+        select  * from  USER WHERE ID = #{id}
+    </select>
+</mapper>
